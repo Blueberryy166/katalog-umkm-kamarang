@@ -1,0 +1,1386 @@
+BUKU PANDUAN PENGGUNAAN
+SISTEM INFORMASI KATALOG DAN PEMASARAN DIGITAL PRODUK UMKM
+DESA KAMARANG, KECAMATAN GREGED, KABUPATEN CIREBON
+
+(Masukkan gambar: Logo Resmi Kabupaten Cirebon dan Logo Universitas Muhammadiyah Cirebon)
+
+Disusun Oleh:
+Khotibul Umam
+Kuliah Kerja Mahasiswa (KKM) Kelompok 26
+Universitas Muhammadiyah Cirebon
+Tahun 2026
+
+KATA PENGANTAR
+
+Puji syukur kehadirat Allah SWT atas limpahan rahmat, taufik, serta hidayah-Nya, sehingga Buku Panduan Penggunaan Sistem Informasi Katalog dan Pemasaran Digital Produk Usaha Mikro, Kecil, dan Menengah (UMKM) Desa Kamarang ini dapat diselesaikan dengan baik dan lancar. Buku panduan ini disusun sebagai salah satu luaran program kerja Kuliah Kerja Mahasiswa (KKM) Kelompok 26 Universitas Muhammadiyah Cirebon (UMC) di Desa Kamarang, Kecamatan Greged, Kabupaten Cirebon, Jawa Barat.
+
+Pengembangan sistem informasi ini bertujuan untuk menghadirkan sarana promosi dan pemasaran digital mandiri bagi Pemerintah Desa Kamarang dan segenap pelaku usaha lokal. Melalui platform web ini, produk-produk unggulan karya warga desa—mulai dari makanan ringan, olahan pangan, hingga aneka minuman dan kerajinan—dapat dipublikasikan secara terstruktur, dilengkapi informasi harga, pilihan varian, titik lokasi Google Maps, serta integrasi pemesanan langsung melalui WhatsApp. Panduan ini dirancang secara sistematis, komunikatif, dan praktis agar mudah dipahami serta diaplikasikan oleh perangkat desa, pengelola website, dan pelaku UMKM dari berbagai tingkatan literasi digital.
+
+Penyusunan sistem dan modul panduan ini dapat terwujud berkat bimbingan, arahan, dan dukungan dari berbagai pihak. Penulis menyampaikan apresiasi dan terima kasih yang setulus-tulusnya kepada:
+1. Allah SWT yang telah memberikan kelancaran dan kesehatan dalam pelaksanaan program.
+2. Dosen Pembimbing Lapangan (DPL) KKM Kelompok 26 Universitas Muhammadiyah Cirebon atas bimbingan dan masukannya.
+3. Kuwu (Kepala Desa) Kamarang beserta seluruh jajaran pamong dan perangkat Desa Kamarang yang telah memberikan izin, fasilitas, serta sambutan hangat.
+4. Para pelaku UMKM Desa Kamarang yang telah bersedia meluangkan waktu dan berbagi data informasi usaha.
+5. Rekan-rekan Mahasiswa KKM Kelompok 26 UMC atas kerja sama, semangat gotong royong, dan kebersamaannya selama kegiatan berlangsung.
+
+Penulis menyadari bahwa buku panduan ini tentu masih memiliki ruang penyempurnaan. Oleh sebab itu, segala kritik dan saran yang konstruktif sangat diharapkan demi penyempurnaan di masa yang akan datang. Semoga sistem informasi ini mampu memberikan manfaat nyata dan berkelanjutan bagi kemajuan ekonomi dan kesejahteraan masyarakat Desa Kamarang.
+
+Kamarang, September 2026
+
+
+Khotibul Umam
+KKM Kelompok 26 Universitas Muhammadiyah Cirebon
+
+i
+
+DAFTAR ISI
+
+KATA PENGANTAR ............................................................................................... i
+DAFTAR ISI ........................................................................................................... ii
+BAB I PENGENALAN SISTEM ........................................................................... 1
+1.1 Latar Belakang & Tujuan Pengembangan Sistem ............................................ 1
+    A. Latar Belakang Masalah ............................................................................... 1
+    B. Tujuan Pengembangan Sistem ..................................................................... 2
+1.2 Halaman Publik (Untuk Warga & Calon Pembeli) ............................................ 3
+    A. Daftar & Fungsi Halaman Publik ................................................................. 3
+    B. Ringkasan Halaman Publik .......................................................................... 5
+1.3 Panel Admin (Pusat Kendali Pengelola Desa) ................................................... 6
+    A. Siapa Pengguna Panel Admin? ..................................................................... 6
+    B. Cara Kerja dan Hubungan dengan Halaman Publik ..................................... 7
+    C. Fitur dan Modul yang Tersedia di Panel Admin ........................................... 8
+    D. Perbedaan Halaman Publik vs Panel Admin ................................................ 8
+1.4 Perangkat & Spesifikasi yang Dibutuhkan ....................................................... 9
+    A. Perangkat Pengunjung Publik (Warga/Pembeli) ........................................... 9
+    B. Perangkat Pengelola Desa (Admin) ............................................................. 9
+    C. Peramban Web (Browser) yang Didukung ................................................... 10
+BAB II CARA MENGAKSES WEBSITE .............................................................. 11
+2.1 Membuka Halaman Utama Website (Publik) ................................................... 11
+    A. Informasi Alamat Website (URL) ................................................................ 11
+    B. Cara Membuka Melalui Komputer / Laptop ................................................ 11
+    C. Cara Membuka Melalui Smartphone / HP ................................................... 12
+    D. Tampilan dan Navigasi Halaman Beranda .................................................... 13
+2.2 Membuka Halaman Panel Admin CMS ........................................................... 14
+    A. Alamat URL Akses Panel Admin ................................................................. 14
+    B. Langkah Membuka Panel Admin ................................................................. 14
+    C. Perlindungan Keamanan Jika Belum Login ................................................. 15
+2.3 Catatan Penting Pengoperasian Sistem ............................................................. 16
+    A. Menjalankan Server Lokal (XAMPP / Laragon) ........................................... 16
+    B. Pembaruan dan Pembersihan Cache Browser .............................................. 17
+    C. Standar Keamanan Akun Pengelola ............................................................. 18
+BAB III AKSES & KEAMANAN AKUN ADMIN ............................................... 19
+3.1 Cara Login ke Panel Admin ............................................................................. 19
+    A. Langkah-Langkah Login ke Sistem ............................................................. 19
+    B. Informasi Akun Default Pertama Kali ......................................................... 20
+3.2 Pengenalan Antarmuka Panel Admin ................................................................ 21
+    A. Struktur Tata Letak Halaman Admin .......................................................... 21
+    B. Fungsi Menu Samping (Sidebar) ................................................................. 22
+3.3 Mengubah Profil Akun & Kata Sandi (Password) ............................................ 23
+    A. Memperbarui Nama dan Email Administrator ............................................. 23
+    B. Mengganti Kata Sandi (Password) Akun ..................................................... 24
+3.4 Keluar dari Panel Admin (Logout) .................................................................... 25
+BAB IV PENGELOLAAN FITUR UTAMA (UMKM & PRODUK) .................... 26
+4.1 Mengelola Data Pelaku UMKM Desa .............................................................. 26
+    A. Membuka Menu Data UMKM ..................................................................... 26
+    B. Menambah Data UMKM Baru ..................................................................... 27
+    C. Menentukan Titik Koordinat Peta Interaktif (Google Maps) ....................... 29
+    D. Mengubah (Edit) Data Pelaku UMKM ........................................................ 30
+    E. Menghapus Data UMKM ............................................................................. 31
+4.2 Mengelola Katalog Produk UMKM ................................................................. 32
+    A. Membuka Menu Kelola Produk ................................................................... 32
+    B. Menambah Produk Baru .............................................................................. 33
+    C. Mengatur Harga Pas vs Rentang Estimasi Harga (Min - Max) .................... 35
+    D. Menambahkan Opsi Varian Produk Dinamis .............................................. 36
+    E. Mengatur Status Stok & Produk Unggulan (Featured) ................................. 37
+    F. Mengubah (Edit) dan Menghapus Produk .................................................... 38
+
+ii
+
+BAB V PENGELOLAAN FITUR PENDUKUNG (TAMPILAN WEB) ............. 39
+5.1 Mengelola Kategori Produk .............................................................................. 39
+    A. Menambah Kategori Baru ............................................................................ 39
+    B. Mengubah dan Menghapus Kategori ............................................................ 40
+5.2 Mengelola Banner Slider Beranda .................................................................... 41
+    A. Menambah Banner Slider Baru ................................................................... 41
+    B. Mengatur Urutan, Tautan, dan Status Aktif Banner ..................................... 42
+    C. Menghapus Banner Slider ........................................................................... 43
+5.3 Membaca Modul Panduan Mandiri di Sistem ................................................... 43
+BAB VI PANDUAN SISI PUBLIK & PEMESANAN WHATSAPP .................... 44
+6.1 Menjelajahi Halaman Publik (Tampilan Pengunjung) ....................................... 44
+    A. Halaman Beranda (/) .................................................................................... 44
+    B. Halaman Katalog Produk (/katalog) ............................................................. 45
+    C. Halaman Direktori UMKM (/umkm) ........................................................... 46
+    D. Halaman Kontak & Layanan (/kontak) ........................................................ 47
+6.2 Alur Transaksi & Pemesanan Produk ............................................................... 48
+    A. Skenario 1: UMKM Memiliki WhatsApp (1-Click Order) ........................... 48
+    B. Skenario 2: UMKM Tanpa WhatsApp (Pemesanan Langsung di Tempat) ... 50
+BAB VII PENANGANAN MASALAH (TROUBLESHOOTING) ........................ 52
+7.1 Kendala Akses & Jaringan ................................................................................ 52
+    A. Website Tidak Dapat Dibuka Sama Sekali .................................................. 52
+    B. Muncul Pesan 419 | Page Expired Saat Mengirim Formulir ......................... 52
+    C. Muncul Pesan 404 | Not Found ................................................................... 53
+7.2 Kendala Pengelolaan Data & Foto .................................................................... 53
+    A. Foto Produk atau Banner Gagal Diunggah .................................................. 53
+    B. Perubahan Data atau Produk Baru Tidak Muncul di Publik ......................... 54
+    C. Peta Google Maps Tidak Menampilkan Titik yang Tepat ............................ 54
+7.3 Kendala Pemesanan WhatsApp ........................................................................ 55
+    A. Tombol WhatsApp Tidak Merespons atau Nomor Salah ............................. 55
+    B. Nomor HP Warga / UMKM Tidak Menggunakan Format Standar ............... 55
+7.4 Tips Perawatan & Pemeliharaan Rutin ............................................................. 56
+BAB VIII PENUTUP ............................................................................................... 57
+8.1 Kesimpulan & Harapan Keberlanjutan .............................................................. 57
+8.2 Kontak Dukungan Teknis ................................................................................. 58
+
+iii
+
+BAB I
+PENGENALAN SISTEM
+
+1.1 Latar Belakang & Tujuan Pengembangan Sistem
+
+A. Latar Belakang Masalah
+Desa Kamarang merupakan salah satu desa yang terletak di wilayah Kecamatan Greged, Kabupaten Cirebon, Provinsi Jawa Barat. Desa ini dianugerahi potensi sumber daya alam agraris yang subur serta masyarakat yang memiliki etos kerja tinggi. Selain bertani dan berkebun, sebagian masyarakat Desa Kamarang menggantungkan mata pencahariannya pada sektor Usaha Mikro, Kecil, dan Menengah (UMKM) rumahan, seperti pengolahan emping melinjo, aneka keripik singkong dan pisang, olahan gula aren asli, produk pangan siap santap, hingga aneka kerajinan tangan.
+
+Meskipun potensi produk UMKM Desa Kamarang sangat kaya dan memiliki kualitas rasa serta daya saing yang tinggi, pengembangan usaha mikro di tingkat desa kerap menghadapi beberapa tantangan nyata di lapangan:
+1. Keterbatasan Jangkauan Promosi: Sebagian besar pelaku UMKM masih mengandalkan penjualan konvensional dari mulut ke mulut atau menunggu pembeli datang ke warung/rumah, sehingga calon konsumen dari luar wilayah desa sulit mengetahui produk-produk unggulan Kamarang.
+2. Informasi Usaha yang Tersebar dan Belum Terstruktur: Belum ada satu basis data terpadu di desa yang mendata siapa saja pemilik UMKM di Dusun Manis, Dusun Pahing, Dusun Kliwon, maupun Dusun Wage, apa saja produk yang mereka hasilkan, izin P-IRT atau sertifikasi halalnya, serta bagaimana cara membelinya.
+3. Kesenjangan Literasi Digital Pelaku Usaha: Tidak semua pelaku UMKM di desa memiliki akun e-commerce kompleks atau menggunakan smartphone secara intensif. Sebagian pelaku usaha bahkan belum menggunakan aplikasi WhatsApp, sehingga membutuhkan mekanisme sistem informasi yang tetap dapat mempromosikan lokasi toko fisik mereka secara akurat.
+4. Ketiadaan Saluran Komunikasi Digital Terpadu: Masyarakat umum maupun wisatawan luar daerah yang membutuhkan oleh-oleh khas Desa Kamarang belum memiliki saluran terpusat untuk menghubungi penjual atau pengelola desa secara cepat.
+
+(Masukkan gambar: Foto lanskap gerbang Desa Kamarang dan aneka produk UMKM olahan warga Desa Kamarang)
+
+Berdasarkan kondisi tersebut, tim Kuliah Kerja Mahasiswa (KKM) Kelompok 26 Universitas Muhammadiyah Cirebon berinisiatif merancang dan membangun "Sistem Informasi Katalog dan Pemasaran Digital Produk UMKM Desa Kamarang". Platform ini dirancang ramah pengguna (user-friendly), modern, cepat, serta dapat diakses dengan mudah baik dari ponsel pintar (smartphone) maupun komputer.
+
+1
+
+B. Tujuan Pengembangan Sistem
+Sistem Informasi Katalog UMKM Desa Kamarang dikembangkan dengan tujuan strategis sebagai berikut:
+
+1. Menghadirkan Katalog Promosi Digital Terpusat:
+   Menyediakan etalase online yang rapi dan profesional untuk memamerkan seluruh produk olahan dan kerajinan warga Desa Kamarang secara luas tanpa batasan waktu dan wilayah geografis.
+
+2. Membangun Direktori Pelaku UMKM Desa yang Akurat:
+   Mendokumentasikan profil pemilik usaha, nama toko, alamat lengkap tiap dusun, dan peta titik koordinat Google Maps yang presisi untuk memudahkan pelacakan dan kunjungan pembeli langsung.
+
+3. Memfasilitasi Transaksi Cepat Tanpa Biaya Tambahan:
+   Menghubungkan calon pembeli secara langsung ke nomor WhatsApp pemilik usaha dengan pesan pesanan yang terisi otomatis (1-Click WhatsApp Order), sehingga transaksi tetap berlangsung akrab, fleksibel, dan tanpa potongan komisi e-commerce.
+
+4. Menyediakan Solusi Bagi UMKM Tanpa WhatsApp:
+   Sistem secara cerdas memberikan petunjuk arah peta (Google Maps navigation) dan informasi kontak alamat dusun bagi UMKM yang belum memiliki smartphone/WhatsApp, sehingga tidak ada warga yang tertinggal dalam digitalisasi desa.
+
+5. Menanamkan Kemandirian Tata Kelola Digital bagi Perangkat Desa:
+   Melalui Content Management System (CMS) Panel Admin yang intuitif, aparat desa dapat terus memperbarui data produk, harga, nomor kontak, foto toko, dan banner promosi secara mandiri pasca-periode KKM selesai.
+
+(Masukkan gambar: Diagram alur tujuan sistem dari pendataan UMKM desa, katalog digital, hingga transaksi via WhatsApp dan kunjungan fisik)
+
+2
+
+1.2 Halaman Publik (Untuk Warga & Calon Pembeli)
+
+Halaman publik adalah antarmuka website yang dapat dibuka dan dinikmati secara bebas oleh siapa saja—baik warga Desa Kamarang, masyarakat seputar Cirebon, maupun wisatawan dari luar kota—tanpa perlu melakukan registrasi akun atau login. Seluruh halaman publik dirancang dengan estetika modern yang bersih, cepat diakses dari ponsel, serta memiliki navigasi yang ramah pengguna.
+
+A. Daftar & Fungsi Halaman Publik
+
+1. Halaman Beranda (URL: /)
+   Merupakan gerbang utama kedatangan pengunjung saat mengakses alamat website. Halaman beranda memadukan visual potensi desa dengan etalase utama produk lokal.
+   Konten yang tampil di Halaman Beranda:
+   • Banner Hero Slider Interaktif: Menampilkan spanduk promosi berjalan dengan gambar berkualitas tinggi dan tombol cepat menuju katalog.
+   • Indikator Statistik Wilayah & UMKM: Kartu ringkasan jumlah penduduk, jumlah KK, total UMKM terdaftar, dan jumlah produk aktif.
+   • Navigasi Kategori Pilihan: Ikon kategori cepat (Makanan Ringan, Olahan Pangan, Minuman, dsb.) untuk memudahkan pengunjung memilih jenis produk yang diminati.
+   • Galeri Produk Unggulan Desa: Menampilkan produk-produk terbaik yang disematkan status "Unggulan" oleh pengelola desa.
+   • Direktori UMKM Unggulan: Sorotan beberapa profil toko UMKM warga desa beserta lokasi dusunnya.
+   • Sambutan Resmi Kepala Desa (Kuwu): Pesan dan harapan pimpinan desa dalam memajukan perekonomian warga melalui transformasi digital.
+   • Ajakan Kontak & Footer: Tautan media sosial, nomor telepon kantor desa, dan informasi hak cipta.
+
+(Masukkan gambar/screenshot: Tampilan Halaman Beranda Website Katalog UMKM Desa Kamarang yang menampilkan Hero Banner Slider dan Produk Unggulan)
+
+3
+
+2. Halaman Katalog Produk (URL: /katalog)
+   Halaman ini merupakan etalase lengkap seluruh produk yang diproduksi oleh para pelaku UMKM Desa Kamarang.
+   Fitur utama pada Halaman Katalog:
+   • Kolom Pencarian Cepat: Pengunjung dapat mengetikkan nama makanan, keripik, atau bahan yang ingin dicari (contoh: "singkong", "kopi", "gula").
+   • Filter Kategori: Memilih kelompok produk berdasarkan kategori (Makanan Ringan, Olahan Pangan, Minuman, dll.).
+   • Filter Dusun: Menyaring produk berdasarkan asal dusun pembuatnya (Dusun Manis, Pahing, Kliwon, Wage).
+   • Pengurutan Harga & Waktu: Mengurutkan produk dari harga termurah, harga termahal, atau produk terbaru.
+   • Tampilan Kartu Produk: Setiap produk ditampilkan dalam kartu elegan yang memuat foto jernih, label kategori, nama produk, nama toko UMKM & dusun, estimasi rentang harga (atau harga pas), satuan kemasan, dan badge varian.
+
+(Masukkan gambar/screenshot: Tampilan Halaman Katalog Produk lengkap dengan filter kategori, kolom pencarian, dan grid kartu produk)
+
+3. Halaman Detail Produk (URL: /produk/{slug})
+   Halaman rincian lengkap mengenai satu produk tertentu yang dipilih oleh pengunjung.
+   Informasi yang disajikan:
+   • Foto Utama Produk: Gambar produk ukuran besar dengan resolusi tajam.
+   • Nama & Kategori Produk: Identitas lengkap produk dan kelompok jenisnya.
+   • Rentang Harga / Harga Pas: Menampilkan harga satuan (contoh: Rp 15.000) atau rentang harga variatif (contoh: Rp 10.000 - Rp 25.000).
+   • Legalitas Usaha: Nomor Izin Edar P-IRT dan status sertifikasi Halal (jika ada).
+   • Pemilih Varian Produk Interaktif: Pilihan rasa (Original, Balado, Pedas Manis) atau pilihan ukuran kemasan (250gr, 500gr, 1kg) yang dapat diklik langsung oleh calon pembeli.
+   • Deskripsi Lengkap & Komposisi: Penjelasan bahan baku, keunggulan olahan, dan saran penyajian.
+   • Profil Pemilik Usaha: Nama UMKM pemilik produk beserta alamat dusun tempat tinggalnya.
+   • Tombol Pesan WhatsApp / Petunjuk Pembelian Langsung: Tombol hijau dinamis yang langsung membuka WhatsApp atau petunjuk lokasi fisik toko jika pemilik belum ber-WhatsApp.
+
+(Masukkan gambar/screenshot: Tampilan Halaman Detail Produk dengan pemilih varian interaktif dan tombol Pesan via WhatsApp)
+
+4
+
+4. Halaman Direktori UMKM (URL: /umkm)
+   Halaman ini berfungsi sebagai buku direktori digital yang mendata seluruh toko dan tempat usaha mikro di Desa Kamarang.
+   Fitur yang tersedia:
+   • Pencarian Nama Toko atau Pemilik Usaha.
+   • Filter berdasarkan dusun (Dusun Manis, Dusun Pahing, Dusun Kliwon, Dusun Wage).
+   • Kartu profil UMKM yang menampilkan foto tempat usaha/logo, nama pemilik, alamat, status kontak WhatsApp, dan jumlah ragam produk yang dijual.
+   • Tombol "Lihat Profil & Toko" untuk membuka rincian tempat usaha lengkap dengan peta Google Maps terintegrasi dan etalase seluruh produk milik toko bersangkutan.
+
+(Masukkan gambar/screenshot: Halaman Direktori UMKM Desa Kamarang yang menampilkan daftar toko dan filter dusun)
+
+5. Halaman Kontak & Layanan (URL: /kontak)
+   Menyediakan sarana komunikasi terbuka bagi warga maupun calon mitra luar daerah untuk mengirimkan pesan, kritik, saran, atau permohonan informasi kepada pengelola desa.
+   Fitur yang tersedia:
+   • Alamat fisik kantor desa, email resmi, dan nomor telepon/WhatsApp kantor desa.
+   • Formulir pengiriman pesan yang memuat: Nama Lengkap, Nomor Telepon/WhatsApp, Subjek Pesan, dan Isi Pesan.
+   • Konfirmasi notifikasi pengiriman berhasil secara langsung di layar.
+
+(Masukkan gambar/screenshot: Tampilan Halaman Kontak dan Formulir Pesan Masyarakat)
+
+B. Ringkasan Halaman Publik
+
+Untuk memudahkan pemahaman rute navigasi, berikut adalah tabel rangkuman seluruh halaman publik website Katalog UMKM Desa Kamarang:
+
++----+--------------------+----------------------+----------------------------------------------------+
+| No | Nama Halaman       | Alamat URL           | Fungsi Utama bagi Pengunjung                      |
++----+--------------------+----------------------+----------------------------------------------------+
+| 1  | Beranda            | /                    | Gerbang pembuka, slider promo, statistik, & produk |
+| 2  | Katalog Produk     | /katalog             | Cari dan saring seluruh produk UMKM desa          |
+| 3  | Detail Produk      | /produk/{slug}       | Rincian harga, varian rasa/ukuran, & order WA     |
+| 4  | Direktori UMKM     | /umkm                | Daftar pelaku UMKM, pemetaan dusun, & peta rute   |
+| 5  | Kontak & Layanan   | /kontak              | Info kantor balai desa & formulir pesan warga      |
++----+--------------------+----------------------+----------------------------------------------------+
+
+5
+
+1.3 Panel Admin (Pusat Kendali Pengelola Desa)
+
+Panel Admin atau Content Management System (CMS) adalah area terproteksi yang khusus dibangun untuk aparatur pemerintah desa, pengurus BUMDes, atau pengelola teknis website. Melalui panel admin inilah pengelola dapat menambahkan toko UMKM baru, mengunggah foto produk olahan warga, menyesuaikan harga, serta mengubah spanduk beranda tanpa perlu menyentuh baris kode pemrograman sama sekali.
+
+A. Siapa Pengguna Panel Admin?
+Panel admin diperuntukkan bagi pihak-pihak yang telah diberikan wewenang resmi oleh Pemerintah Desa Kamarang, antara lain:
+
+1. Perangkat Desa / Administrator Website:
+   Bertanggung jawab dalam memverifikasi data UMKM baru, mengunggah produk warga, serta memperbarui banner promosi.
+2. Pengelola BUMDes / Pokdarwis:
+   Membantu mendampingi pelaku usaha lokal dalam menyusun katalog produk, variasi harga, serta foto kemasan yang menarik.
+3. Penanggung Jawab Teknis:
+   Melakukan pemeliharaan berkala, backup basis data (database), dan penggantian kata sandi login secara aman.
+
+PENTING UNTUK DIPERHATIKAN:
+Tautan masuk (login) panel admin sengaja tidak diletakkan secara mencolok pada menu navigasi publik demi menjaga kebersihan tampilan website dan meminimalisir upaya login ilegal dari pihak luar. Akun administrator (email dan kata sandi) bersifat rahasia dan tidak boleh dipinjamkan kepada sembarang orang.
+
+(Masukkan gambar: Ilustrasi konsep keamanan Panel Admin CMS terproteksi dengan autentikasi kata sandi)
+
+6
+
+B. Cara Kerja dan Hubungan dengan Halaman Publik
+
+Panel Admin dan Halaman Publik saling terhubung dalam satu sistem basis data terpadu secara seketika (real-time). Setiap tindakan penginputan atau perubahan data yang disimpan di Panel Admin akan langsung tampil di halaman publik saat pengunjung memuat halaman website.
+
+Hubungan aksi pengelola dengan dampaknya pada tampilan website:
+
++-------------------------------------+--------------------------------------------------------+
+| Aksi di Panel Admin                 | Dampak Seketika di Halaman Publik                      |
++-------------------------------------+--------------------------------------------------------+
+| Mendaftarkan toko UMKM baru         | Toko langsung terdaftar di menu Direktori UMKM         |
+| Mengunggah produk olahan baru       | Produk langsung terpajang di Halaman Katalog           |
+| Menandai produk sebagai "Unggulan"  | Produk mendapatkan lencana & tampil di Beranda         |
+| Memperbarui koordinat Google Maps   | Pin penunjuk arah pada detail UMKM otomatis bergeser   |
+| Menambah pilihan varian rasa/ukuran | Tombol pilihan varian langsung muncul di detail produk |
+| Mengunggah banner slider beranda    | Spanduk hero promo di beranda otomatis berganti        |
+| Memperbarui kata sandi admin        | Sesi berikutnya wajib login menggunakan sandi baru     |
++-------------------------------------+--------------------------------------------------------+
+
+(Masukkan gambar: Diagram integrasi sinkronisasi data dari formulir Panel Admin langsung menuju etalase Halaman Publik)
+
+7
+
+C. Fitur dan Modul yang Tersedia di Panel Admin
+
+Panel admin website UMKM Desa Kamarang dilengkapi dengan menu-menu inti yang sangat mudah dioperasikan:
+
+1. Dashboard:
+   Menampilkan ringkasan ringkas berupa kartu statistik total UMKM, total produk terdaftar, total kategori, serta jalan pintas aksi cepat.
+2. Kelola Produk:
+   Pusat penambahan, pengubahan rincian, varian, rentang harga, stok, dan penghapusan produk olahan warga.
+3. Data UMKM:
+   Pusat pendaftaran toko baru, penentuan titik koordinat Google Maps interaktif, dusun, nama pemilik, dan nomor WhatsApp.
+4. Kategori Produk:
+   Pengaturan pengelompokan produk (Makanan Ringan, Olahan Pangan, Minuman, Kerajinan, dll.).
+5. Banner Slider:
+   Pusat pengelolaan spanduk gambar berputar (hero carousel) yang muncul di bagian paling atas beranda.
+6. Panduan Pengelolaan:
+   Halaman bantuan modul panduan mandiri interaktif di dalam sistem.
+7. Akun Pengelola:
+   Fitur pembaruan nama administrator, email, dan penggantian kata sandi login admin.
+
+D. Perbedaan Halaman Publik vs Panel Admin
+
+Berikut perbedaan mendasar antara kedua sisi sistem:
+
++-----------------------+----------------------------------+------------------------------------+
+| Karakteristik         | Halaman Publik                   | Panel Admin (CMS)                  |
++-----------------------+----------------------------------+------------------------------------+
+| Alamat Akses (URL)    | http://alamat-web/               | http://alamat-web/admin            |
+| Kewajiban Login       | TIDAK PERLU LOGIN                | WAJIB LOGIN (Email & Password)     |
+| Sasaran Pengguna      | Warga desa, pembeli, wisatawan   | Aparat desa & pengelola resmi      |
+| Fungsi Utama          | Melihat produk, rute, & order WA | Menginput, mengedit, & hapus data  |
+| Keamanan Akses        | Terbuka untuk umum               | Terproteksi otentikasi ketat       |
++-----------------------+----------------------------------+------------------------------------+
+
+8
+
+1.4 Perangkat & Spesifikasi yang Dibutuhkan
+
+Website Katalog UMKM Desa Kamarang dirancang ringan, responsif, dan hemat penggunaan memori sehingga dapat berjalan lancar di berbagai perangkat modern tanpa spesifikasi khusus.
+
+A. Perangkat Pengunjung Publik (Warga/Pembeli)
+Pengunjung dapat membuka website dengan sangat nyaman menggunakan:
+• Smartphone / HP Android (seperti Samsung, Xiaomi, Oppo, Vivo, Realme, dll.)
+• Smartphone Apple iPhone (iOS)
+• Komputer PC atau Laptop kantor / rumah
+• Tablet atau iPad
+
+(Masukkan gambar: Mockup tampilan website di layar Komputer, Layar Tablet, dan Layar Handphone secara responsif)
+
+B. Perangkat Pengelola Desa (Admin)
+Untuk mempermudah pengetikan deskripsi produk yang panjang, pengunggahan foto produk beresolusi baik, serta penentuan titik koordinat peta, pengelola disarankan mengoperasikan Panel Admin melalui:
+• Laptop atau Komputer Desktop dengan resolusi layar minimal 1366 x 768 piksel.
+• Memiliki memori RAM minimal 2 GB atau lebih.
+• Dilengkapi tetikus (mouse) untuk mempermudah pergeseran pin penunjuk lokasi Google Maps pada peta interaktif.
+• Memiliki media penyimpanan untuk menyimpan arsip foto produk warga.
+
+9
+
+C. Peramban Web (Browser) yang Didukung
+Sistem informasi ini telah diuji dan mendukung peramban web modern berikut:
+1. Google Chrome (Sangat direkomendasikan untuk stabilitas fitur peta dan unggah berkas).
+2. Mozilla Firefox.
+3. Microsoft Edge.
+4. Safari (pada perangkat Apple).
+5. Opera / Brave Browser.
+
+Catatan: Hindari menggunakan browser usang seperti Internet Explorer versi lama karena beberapa fitur animasi interaktif dan pemilih peta modern tidak didukung sepenuhnya.
+
+(Masukkan gambar: Ikon-ikon browser modern yang didukung: Google Chrome, Mozilla Firefox, Microsoft Edge, dan Safari)
+
+10
+
+BAB II
+CARA MENGAKSES WEBSITE
+
+2.1 Membuka Halaman Utama Website (Publik)
+
+A. Informasi Alamat Website (URL)
+Website Katalog UMKM Desa Kamarang dapat diakses sesuai konfigurasi penempatan sistem:
+1. Akses Hosting Online (Jika domain desa telah aktif):
+   Ketikkan alamat resmi desa pada peramban web, misalnya:
+   https://kamarang.desa.id atau https://umkm-kamarang.cirebonkab.go.id
+2. Akses Server Lokal Kantor Desa:
+   Jika dijalankan pada jaringan lokal kantor desa (menggunakan XAMPP atau Laragon), website dapat dibuka menggunakan alamat:
+   http://localhost/katalog_umkm/public atau http://127.0.0.1:8000
+   Atau menggunakan alamat IP lokal komputer server (misalnya: http://192.168.1.15:8000) yang terhubung pada jaringan Wi-Fi balai desa.
+
+B. Cara Membuka Melalui Komputer / Laptop
+
+Langkah-langkah membuka website di komputer:
+1. Nyalakan laptop atau komputer, pastikan telah terhubung ke jaringan internet atau Wi-Fi kantor desa.
+2. Buka aplikasi Google Chrome atau peramban pilihan Anda dengan mengklik ganda ikon browser di desktop.
+3. Klik pada kolom alamat (address bar) di bagian atas browser.
+4. Ketikkan alamat website katalog UMKM Desa Kamarang, kemudian tekan tombol Enter pada papan ketik (keyboard).
+5. Halaman Beranda website akan langsung terbuka di layar Anda.
+
+(Masukkan gambar/screenshot: Cara mengetik alamat website pada address bar peramban Google Chrome di komputer)
+
+11
+
+C. Cara Membuka Melalui Smartphone / HP
+
+Langkah-langkah membuka website di handphone:
+1. Pastikan paket data internet atau koneksi Wi-Fi di ponsel Anda aktif.
+2. Buka aplikasi Chrome (ikon bola empat warna) pada HP Android Anda, atau Safari pada iPhone.
+3. Sentuh pada kolom pencarian/alamat URL di bagian atas.
+4. Ketikkan alamat website sistem (misal: http://kamarang.desa.id), lalu tekan tombol "Masuk" / "Cari" pada keyboard virtual HP.
+5. Halaman beranda akan tampil dengan tata letak vertikal yang pas dan nyaman dibaca di genggaman tangan Anda.
+
+(Masukkan gambar/screenshot: Tampilan halaman pembuka website saat diakses melalui browser smartphone)
+
+12
+
+D. Tampilan dan Navigasi Halaman Beranda
+
+Setelah website terbuka sempurna, Anda akan melihat struktur halaman beranda yang memuat beberapa bagian:
+
+1. Bagian Atas (Header & Navbar):
+   Memuat logo Desa Kamarang, identitas sistem, dan menu navigasi:
+   [Beranda] - [Katalog Produk] - [Direktori UMKM] - [Kontak]
+2. Spanduk Beranda (Hero Banner):
+   Spanduk visual bergerak yang memuat tajuk utama "Katalog Produk & Pemasaran Digital UMKM Desa Kamarang" serta tombol ajakan "Jelajahi Katalog Produk".
+3. Kartu Statistik Desa:
+   Menampilkan angka jumlah penduduk, kepala keluarga, jumlah UMKM terdaftar, dan jumlah produk aktif.
+4. Bagian Kategori Pilihan:
+   Tombol pintas kategori makanan ringan, olahan pangan, minuman segar, dll.
+5. Bagian Produk Unggulan:
+   Koleksi produk-produk pilihan yang diberi label bintang unggulan.
+6. Bagian Sorotan Kolaborasi & Sambutan Kuwu:
+   Pesan apresiasi kepala desa atas program kerja KKM UMC 2026 dan tombol langsung menuju Direktori UMKM.
+7. Kaki Halaman (Footer):
+   Memuat tautan cepat, jam layanan kantor desa, dan tautan sosial media.
+
+(Masukkan gambar/screenshot: Bagian-bagian navigasi utama pada halaman beranda lengkap dengan penunjuk panah)
+
+13
+
+2.2 Membuka Halaman Panel Admin CMS
+
+A. Alamat URL Akses Panel Admin
+Untuk masuk ke pusat kendali sistem, pengelola desa dapat menambahkan akhiran `/admin` di belakang alamat utama website:
+• Jika sistem online: https://nama-website-desa.id/admin
+• Jika sistem diuji di komputer lokal: http://localhost/katalog_umkm/public/admin atau http://127.0.0.1:8000/admin
+
+B. Langkah Membuka Panel Admin
+Langkah 1: Buka aplikasi peramban Google Chrome di laptop atau komputer kantor desa.
+Langkah 2: Klik kolom alamat browser di bagian paling atas.
+Langkah 3: Ketik alamat panel admin, misalnya: `http://127.0.0.1:8000/admin`, lalu tekan Enter.
+Langkah 4: Karena halaman admin dilindungi keamanan otentikasi, sistem akan otomatis mengarahkan Anda ke Halaman Formulir Login Administrator (/admin/login).
+Langkah 5: Masukkan email dan kata sandi akun resmi Anda, kemudian tekan tombol "Masuk ke Panel Admin".
+Langkah 6: Jika data akun cocok, Anda akan langsung disambut oleh halaman Dashboard Administrator.
+
+(Masukkan gambar/screenshot: Halaman Formulir Login Pengelola /admin/login dengan logo gembok dan input email password)
+
+14
+
+C. Perlindungan Keamanan Jika Belum Login
+
+Sistem dilengkapi middleware otentikasi keamanan berlapis. Apabila ada orang luar atau pengguna yang mencoba membuka tautan halaman dalam admin secara langsung (contohnya mengetik `http://nama-web/admin/products` atau `http://nama-web/admin/umkms`) tanpa melakukan login terlebih dahulu, maka sistem akan bertindak secara otomatis:
+1. Menolak akses ke halaman yang diminta secara sepihak.
+2. Mengalihkan halaman browser seketika ke halaman login administrator (`/admin/login`).
+3. Menampilkan formulir login kosong yang meminta verifikasi identitas resmi.
+4. Setelah administrator berhasil memasukkan email dan kata sandi yang valid, sistem akan secara otomatis mengarahkan pengguna kembali ke halaman yang sebelumnya ingin dibuka.
+
+Mekanisme ini memastikan bahwa data para pelaku UMKM dan katalog desa terlindungi dari pengubahan tanpa izin.
+
+(Masukkan gambar: Alur diagram keamanan otentikasi sistem menolak akses tanpa izin dan mengalihkan ke halaman login)
+
+15
+
+2.3 Catatan Penting Pengoperasian Sistem
+
+A. Menjalankan Server Lokal (XAMPP / Laragon)
+Apabila website dioperasikan secara mandiri di komputer kantor desa tanpa berlangganan sewa hosting internet, pastikan komponen server lokal telah aktif sebelum mengakses website.
+
+Cara Menjalankan Server XAMPP di Komputer Desa:
+1. Buka aplikasi "XAMPP Control Panel" melalui menu Start Windows atau pintasan di desktop.
+2. Pada baris modul "Apache", klik tombol "Start" hingga tulisan berlatar belakang warna hijau.
+3. Pada baris modul "MySQL", klik tombol "Start" hingga tulisan berlatar belakang warna hijau.
+4. Buka terminal atau Command Prompt (CMD), arahkan ke folder proyek katalog, lalu jalankan perintah: `php artisan serve`.
+5. Website kini siap diakses dari komputer tersebut maupun laptop lain yang terhubung ke jaringan Wi-Fi kantor desa.
+
+(Masukkan gambar/screenshot: Tampilan aplikasi XAMPP Control Panel dengan indikator Apache dan MySQL aktif berwarna hijau)
+
+16
+
+B. Pembaruan dan Pembersihan Cache Browser
+
+Terkadang, setelah administrator mengganti foto produk baru atau mengubah spanduk banner, tampilan di layar laptop warga seolah belum berubah. Hal ini umumnya disebabkan oleh fitur Cache Browser (peramban menyimpan salinan gambar lama agar hemat kuota).
+
+Cara Melakukan Hard Refresh (Muat Ulang Paksa):
+• Pada Komputer Windows: Tekan tombol kombinasi `Ctrl + F5` atau `Ctrl + Shift + R` secara bersamaan pada keyboard. Browser akan membuang salinan lama dan mengambil gambar terbaru dari server.
+• Pada Komputer Mac: Tekan `Cmd + Shift + R`.
+
+Cara Membersihkan Cache di Google Chrome (Lengkap):
+1. Tekan tombol kombinasi `Ctrl + Shift + Delete` di keyboard laptop Anda.
+2. Jendela "Hapus data penelusuran" akan muncul.
+3. Pada rentang waktu, pilih "Semua waktu" (All time).
+4. Beri centang pada opsi:
+   [v] Cookie dan data situs lainnya
+   [v] Gambar dan file dalam cache
+5. Klik tombol biru "Hapus data" (Clear data).
+6. Buka kembali website katalog desa, seluruh data dan foto terbaru akan langsung termuat sempurna.
+
+(Masukkan gambar/screenshot: Jendela dialog Hapus Data Penelusuran (Clear Browsing Data) di Google Chrome)
+
+17
+
+C. Standar Keamanan Akun Pengelola
+
+Demi menjaga integritas sistem informasi katalog desa dari ancaman pembobolan, setiap pengelola wajib mematuhi standar operasional prosedur (SOP) keamanan berikut:
+
+1. Wajib Logout Setelah Bekerja:
+   Jangan pernah meninggalkan komputer dalam keadaan panel admin masih terbuka, terutama bila laptop atau komputer tersebut digunakan secara bergantian oleh perangkat desa lainnya.
+2. Mengganti Kata Sandi Default:
+   Saat pertama kali menerima serah terima sistem dari tim KKM, segera masuk ke menu "Akun Pengelola" dan ubah kata sandi bawaan menjadi kata sandi baru yang kuat.
+3. Kriteria Kata Sandi yang Baik:
+   Gunakan minimal 8 karakter kombinasi huruf besar, huruf kecil, angka, dan simbol (contoh: `Kamarang@2026!`). Hindari menggunakan kata sandi yang mudah ditebak seperti tanggal lahir, nomor telepon, atau kata `admin123`.
+4. Jaga Kerahasiaan Akun:
+   Jangan pernah membagikan username dan password di grup obrolan publik atau menuliskannya di kertas memo yang tertempel di meja kerja.
+
+(Masukkan gambar: Poster infografis tips menjaga keamanan kata sandi dan keamanan akun digital pengelola desa)
+
+18
+
+BAB III
+AKSES & KEAMANAN AKUN ADMIN
+
+3.1 Cara Login ke Panel Admin
+
+A. Langkah-Langkah Login ke Sistem
+
+Untuk masuk dan mulai mengelola data katalog UMKM Desa Kamarang, ikuti langkah-langkah praktis berikut:
+
+Langkah 1:
+Buka peramban Google Chrome di komputer atau laptop Anda, lalu masukkan alamat login admin:
+`http://localhost/katalog_umkm/public/admin/login` atau `https://kamarang.desa.id/admin/login`
+Tekan Enter untuk memuat halaman.
+
+Langkah 2:
+Layar akan menampilkan kotak formulir login bernuansa elegan dengan ikon gembok, tajuk "Login Pengelola", dan sub-tajuk "CMS Katalog UMKM Desa Kamarang".
+
+Langkah 3:
+Pada kolom "Email Administrator", ketikkan alamat email akun admin Anda dengan benar dan teliti (contoh: `admin@kamarang.desa.id`).
+
+Langkah 4:
+Pada kolom "Kata Sandi", ketikkan kata sandi akun administrator Anda.
+
+Langkah 5:
+Klik tombol hijau bertuliskan "Masuk ke Panel Admin".
+
+Langkah 6:
+Sistem akan memvalidasi data Anda dalam 1-2 detik. Apabila email dan kata sandi sesuai, Anda akan langsung dialihkan ke Halaman Dashboard Admin.
+
+Catatan Kesalahan Login:
+Jika muncul kotak pemberitahuan merah bertuliskan *"Identitas tersebut tidak cocok dengan data kami"*, artinya terdapat salah pengetikan huruf besar/kecil pada email atau kata sandi. Periksa tombol Caps Lock pada keyboard Anda lalu coba masukkan kembali dengan teliti.
+
+(Masukkan gambar/screenshot: Formulir login admin yang telah diisi email dan password dengan tombol Masuk ke Panel Admin)
+
+19
+
+B. Informasi Akun Default Pertama Kali
+
+Saat sistem informasi pertama kali diserahkan oleh tim KKM Kelompok 26 Universitas Muhammadiyah Cirebon, akun bawaan (default) yang telah terpasang di dalam sistem adalah sebagai berikut:
+
++-------------------+----------------------------------------------------+
+| Parameter Akun    | Keterangan Bawaan Sistem                           |
++-------------------+----------------------------------------------------+
+| Alamat URL Login  | http://127.0.0.1:8000/admin/login                  |
+| Email Login       | admin@kamarang.desa.id                             |
+| Kata Sandi Bawaan | password                                           |
+| Level Hak Akses   | Administrator Penuh (Kelola Seluruh Fitur)         |
++-------------------+----------------------------------------------------+
+
+PENTING:
+Segera ubah kata sandi default `password` di atas begitu Anda berhasil masuk pertama kali melalui menu "Akun Pengelola" demi mencegah akses yang tidak berhak.
+
+(Masukkan gambar/screenshot: Ilustrasi kotak pengingat penting untuk segera mengganti kata sandi default pasca instalasi)
+
+20
+
+3.2 Pengenalan Antarmuka Panel Admin
+
+A. Struktur Tata Letak Halaman Admin
+
+Setelah proses login berhasil, Anda akan disambut oleh antarmuka kerja administrator yang bersih, modern, dan didesain khusus agar nyaman dipandang berlama-lama.
+
+Struktur antarmuka terbagi menjadi 3 (tiga) area utama:
+1. Panel Menu Samping Kiri (Sidebar Navigasi):
+   Berlatar belakang gelap elegan (slate dark), memuat identitas sistem "Admin Katalog Desa Kamarang" dan seluruh daftar menu kerja.
+2. Bilah Atas (Header / Topbar):
+   Terletak di bagian atas area kerja, memuat:
+   • Tombol garis tiga (ikon burger) untuk menyembunyikan atau memunculkan sidebar menu (sangat berguna pada layar laptop kecil).
+   • Judul halaman yang sedang aktif saat ini.
+   • Tombol pintas "Lihat Web Publik" (ikon mata hijau) untuk membuka tampilan website publik di tab baru.
+   • Foto profil avatar dan nama administrator aktif.
+3. Area Kerja Utama (Main Content Canvas):
+   Area putih di sebelah kanan yang menampilkan kartu data, formulir penginputan, tabel daftar UMKM, dan grafik statistik.
+
+(Masukkan gambar/screenshot: Tampilan utuh Dashboard Panel Admin lengkap dengan penunjuk area Sidebar, Header, dan Area Kerja Utama)
+
+21
+
+B. Fungsi Menu Samping (Sidebar)
+
+Berikut rincian menu-menu yang tersedia pada sidebar navigasi:
+
+1. Dashboard (Ikon Grafik / Chart):
+   Melihat rangkuman angka total UMKM, total produk, dan pintasan cepat.
+2. Kelola Produk (Ikon Kotak Bertumpuk):
+   Menambah produk baru, mengubah deskripsi, varian harga, upload foto, dan mengatur produk unggulan.
+3. Data UMKM (Ikon Toko):
+   Mendaftarkan toko baru, mengatur nama pemilik usaha, dusun, alamat, nomor WhatsApp, serta pin koordinat peta.
+4. Kategori Produk (Ikon Label Tag):
+   Mengelompokkan jenis produk olahan desa.
+5. Banner Slider (Ikon Galeri Gambar):
+   Mengatur gambar promo spanduk berjalan di halaman beranda.
+6. Panduan Pengelolaan (Ikon Buku Terbuka):
+   Melihat rangkuman panduan mandiri interaktif di dalam sistem.
+7. Akun Pengelola (Ikon Pengguna & Roda Gigi):
+   Mengubah nama, email, dan kata sandi login admin.
+8. Tombol Keluar (Ikon Pintu Keluar Merah di sudut bawah):
+   Keluar dari sistem secara aman.
+
+(Masukkan gambar/screenshot: Tampilan menu samping (sidebar) panel admin dengan daftar modul yang rapi)
+
+22
+
+3.3 Mengubah Profil Akun & Kata Sandi (Password)
+
+Pengelola dapat sewaktu-waktu memperbarui identitas dirinya serta mengganti kata sandi tanpa perlu bantuan teknisi atau membongkar basis data.
+
+A. Memperbarui Nama dan Email Administrator
+
+Langkah-langkah:
+1. Pada menu navigasi sebelah kiri, klik menu "Akun Pengelola" (atau klik avatar nama Anda di pojok kanan atas).
+2. Halaman "Pengaturan Akun Pengelola" akan terbuka.
+3. Perbarui data pada kolom:
+   • Nama Administrator: Ganti dengan nama lengkap pejabat pengelola (contoh: *Sekretariat Desa Kamarang* atau *Admin BUMDes*).
+   • Email Login: Ganti dengan email kedinasan aktif desa (contoh: *pemdes.kamarang@gmail.com*).
+4. Jika hanya ingin mengubah nama/email tanpa mengganti kata sandi, biarkan kolom kata sandi tetap kosong.
+5. Klik tombol hijau "Simpan Perubahan" di bagian kanan bawah.
+6. Pesan notifikasi hijau "Profil berhasil diperbarui!" akan muncul di layar.
+
+(Masukkan gambar/screenshot: Formulir pengubahan profil administrator pada menu Akun Pengelola)
+
+23
+
+B. Mengganti Kata Sandi (Password) Akun
+
+Langkah-langkah:
+1. Masuk ke menu "Akun Pengelola".
+2. Gulir layar ke bagian bawah pada kotak "Ganti Password (Opsional)".
+3. Isi 3 (tiga) kolom kata sandi berikut:
+   • Password Saat Ini: Masukkan kata sandi lama Anda yang sedang aktif saat ini.
+   • Password Baru: Masukkan kata sandi baru yang ingin Anda gunakan (minimal 6 karakter, disarankan kombinasi huruf dan angka).
+   • Konfirmasi Password Baru: Ketik ulang kata sandi baru tersebut secara persis tanpa perbedaan spasi atau huruf besar/kecil.
+4. Klik tombol hijau "Simpan Perubahan".
+5. Apabila kata sandi saat ini benar dan konfirmasi cocok, sistem akan memperbarui kata sandi Anda dan menampilkan pesan sukses.
+6. Gunakan kata sandi baru tersebut untuk login pada sesi berikutnya.
+
+Catatan Penting:
+Jika Anda lupa kata sandi lama saat ini, Anda tidak dapat mengubah kata sandi secara mandiri melalui formulir ini. Silakan hubungi penanggung jawab teknis KKM untuk dilakukan reset kata sandi melalui database.
+
+(Masukkan gambar/screenshot: Formulir pengisian kata sandi baru dan konfirmasi kata sandi)
+
+24
+
+3.4 Keluar dari Panel Admin (Logout)
+
+Setelah selesai menjalankan tugas pengelolaan data, biasakan untuk selalu menutup sesi dengan melakukan logout secara benar.
+
+Langkah-langkah Logout:
+1. Arahkan kursor Anda ke bagian paling bawah panel menu samping (sidebar kiri) atau pada menu pojok kanan atas.
+2. Temukan ikon pintu keluar berwarna merah (Logout) di sebelah nama akun administrator Anda.
+3. Klik tombol ikon keluar tersebut.
+4. Sistem akan secara otomatis menghapus berkas sesi (session token) peramban Anda dan mengarahkan kembali ke halaman Formulir Login.
+5. Kini panel admin telah aman dari penyalahgunaan oleh pihak lain yang menggunakan komputer tersebut.
+
+(Masukkan gambar/screenshot: Letak tombol logout pada sudut bawah sidebar admin dan konfirmasi pengalihan ke halaman login)
+
+25
+
+BAB IV
+PENGELOLAAN FITUR UTAMA (UMKM & PRODUK)
+
+4.1 Mengelola Data Pelaku UMKM Desa
+
+Menu "Data UMKM" merupakan fondasi utama sistem. Sebelum sebuah produk dapat diunggah ke katalog, toko atau pelaku UMKM pemilik produk tersebut harus didaftarkan terlebih dahulu ke dalam sistem.
+
+A. Membuka Menu Data UMKM
+
+1. Masuk ke Panel Admin dengan email dan kata sandi Anda.
+2. Klik menu "Data UMKM" (ikon ruko/store) pada sidebar kiri.
+3. Halaman "Daftar Pelaku UMKM Desa Kamarang" akan ditampilkan di layar.
+4. Pada halaman ini Anda dapat melihat:
+   • Total seluruh toko UMKM yang telah terdaftar.
+   • Tombol hijau "+ Tambah UMKM Baru" di pojok kanan atas.
+   • Tabel data lengkap memuat: Nama Toko, Nama Pemilik Usaha, Asal Dusun, Nomor Telepon/WhatsApp, Jumlah Produk, dan Tombol Aksi (Edit & Hapus).
+
+(Masukkan gambar/screenshot: Halaman tabel Daftar Pelaku UMKM Desa Kamarang di panel admin)
+
+26
+
+B. Menambah Data UMKM Baru
+
+Langkah-langkah:
+1. Pada halaman Data UMKM, klik tombol hijau "+ Tambah UMKM Baru" di pojok kanan atas.
+2. Formulir "Tambah UMKM Baru" akan terbuka.
+3. Lengkapi kolom-kolom formulir dengan ketentuan sebagai berikut:
+
++------------------------+-------------------------------------------------------------+--------------+
+| Nama Kolom             | Penjelasan Cara Pengisian                                   | Wajib/Ops?   |
++------------------------+-------------------------------------------------------------+--------------+
+| Nama Usaha / Toko      | Nama merek atau toko rumahan (contoh: UMKM Keripik Ibu Siti)| Wajib Diisi  |
+| Nama Pemilik Usaha     | Nama lengkap warga penanggung jawab (contoh: Ibu Siti R.)   | Wajib Diisi  |
+| Nomor WhatsApp         | Nomor WA aktif diawali 08 (contoh: 082119876543)            | Opsional     |
+|                        | *Jika pemilik belum punya WA, kosongkan saja kolom ini!     |              |
+| Dusun / Blok           | Asal dusun di Kamarang (Dusun Manis / Pahing / Kliwon / Wage)| Wajib Diisi  |
+| Alamat Lengkap         | Rincian RT/RW dan nomor rumah atau patokan lokasi usaha     | Wajib Diisi  |
+| Titik Koordinat Peta   | Latitude & Longitude lokasi toko (dijelaskan pada poin C)   | Disarankan   |
+| Tautan Google Maps     | Link share Google Maps (akan terisi otomatis dari pin peta) | Opsional     |
+| Foto Toko / Tempat     | Unggah foto gerai, rumah produksi, atau logo UMKM (Maks 3MB)| Opsional     |
+| Deskripsi Usaha        | Cerita singkat profil usaha, tahun berdiri, atau keunggulan | Opsional     |
++------------------------+-------------------------------------------------------------+--------------+
+
+4. Setelah seluruh data terisi, gulir ke bawah lalu klik tombol hijau "Simpan Data UMKM".
+5. Sistem akan menyimpan data ke basis data dan menampilkan pesan sukses.
+
+(Masukkan gambar/screenshot: Formulir penginputan data UMKM baru lengkap dengan kolom nama usaha, nama pemilik, dan nomor kontak)
+
+27
+
+Panduan Khusus: UMKM yang Belum Memiliki WhatsApp
+Salah satu keunggulan sistem informasi ini adalah ramah terhadap para pengrajin atau warga sepuh yang belum memiliki telepon pintar (smartphone) atau akun WhatsApp.
+
+Ketentuan Pengisian:
+• Cukup KOSONGKAN kolom "Nomor WhatsApp".
+• Pastikan kolom "Alamat Lengkap" dan "Dusun" diisi dengan sejelas-jelasnya.
+• Sangat disarankan untuk menandai titik koordinat rumah/toko pada peta Google Maps.
+• Efek di Website: Sistem secara otomatis tidak akan menampilkan tombol WhatsApp, melainkan akan menggantinya dengan kotak petunjuk "Pemesanan Langsung di Tempat" lengkap dengan nama pemilik, alamat dusun, dan tombol penunjuk arah jalan (Google Maps Navigation) agar pembeli dapat berkunjung langsung ke rumah warga bersangkutan.
+
+(Masukkan gambar/screenshot: Pengisian kolom formulir UMKM dengan mengosongkan nomor WhatsApp)
+
+28
+
+C. Menentukan Titik Koordinat Peta Interaktif (Google Maps)
+
+Website ini dilengkapi pemilih koordinat peta interaktif (Leaflet / Google Maps) sehingga pengelola tidak perlu repot membuka aplikasi lain untuk mencari angka lintang dan bujur.
+
+Terdapat 3 (tiga) Cara Mudah Menentukan Titik Lokasi Toko:
+
+Cara 1: Menggunakan Tombol "Lokasi GPS Saya" (Sangat Praktis jika Anda di Lokasi)
+1. Buka formulir UMKM melalui laptop atau smartphone saat Anda sedang berada di depan toko/rumah UMKM yang bersangkutan.
+2. Klik tombol hijau "Lokasi GPS Saya" (ikon bidikan sasaran) di atas kotak peta.
+3. Browser akan meminta izin akses lokasi (*"Allow location access?"*), klik **Izinkan (Allow)**.
+4. Pin penunjuk lokasi di peta akan seketika meloncat ke titik presisi keberadaan Anda, dan kolom Latitude, Longitude, serta Link Google Maps otomatis terisi secara akurat.
+
+Cara 2: Menggeser Pin Manual pada Peta Interaktif
+1. Perhatikan kotak peta yang tampil di tengah formulir.
+2. Klik tombol "Desa Kamarang" untuk memusatkan peta ke area inti Desa Kamarang.
+3. Gunakan roda gulir mouse (scroll) atau tombol tanda tambah (+) dan kurang (-) untuk memperbesar (zoom in) jalan dan gang di desa.
+4. Klik langsung pada titik atap rumah atau jalan tempat UMKM berada.
+5. Pin merah akan berpindah ke titik klik tersebut, dan angka koordinat Latitude serta Longitude akan seketika terisi otomatis tanpa perlu mengetik manual.
+
+Cara 3: Memasukkan Angka Koordinat Manual
+Jika Anda sudah memiliki catatan koordinat dari Google Maps HP, Anda cukup mengetikkan angkanya langsung ke kolom "Latitude" (contoh: `-6.846677`) dan "Longitude" (contoh: `108.545615`).
+
+(Masukkan gambar/screenshot: Kotak peta interaktif di formulir UMKM lengkap dengan pin penunjuk lokasi dan tombol Lokasi GPS Saya)
+
+29
+
+D. Mengubah (Edit) Data Pelaku UMKM
+
+Apabila terjadi perubahan pemilik usaha, nomor WhatsApp berganti, atau ingin memperbarui foto tempat usaha:
+
+Langkah-langkah:
+1. Buka menu "Data UMKM" di sidebar.
+2. Temukan nama toko UMKM yang ingin diperbarui pada tabel. Anda dapat menggunakan kolom pencarian tabel jika daftar sudah banyak.
+3. Klik tombol "Edit" (ikon pensil kuning/biru) pada kolom Aksi di sebelah kanan baris UMKM tersebut.
+4. Formulir edit akan terbuka dan telah terisi data lama.
+5. Lakukan perubahan pada kolom yang diinginkan (misalnya mengganti nomor WhatsApp baru atau menggeser pin lokasi peta yang lebih pas).
+6. Jika tidak ingin mengganti foto toko, biarkan kolom unggah foto tetap kosong.
+7. Klik tombol hijau "Simpan Perubahan".
+8. Data baru seketika aktif dan langsung terbarui di seluruh halaman website publik.
+
+(Masukkan gambar/screenshot: Tampilan halaman edit data UMKM dan konfirmasi penyimpanan)
+
+30
+
+E. Menghapus Data UMKM
+
+PERINGATAN PENTING:
+Menghapus data toko UMKM akan berdampak pada produk-produk yang terhubung dengan UMKM tersebut. Pastikan Anda telah memeriksa kembali sebelum menghapus data.
+
+Langkah-langkah:
+1. Buka menu "Data UMKM".
+2. Temukan toko UMKM yang sudah tidak beroperasi atau ingin dihapus.
+3. Klik tombol "Hapus" (ikon tempat sampah merah) pada baris toko tersebut.
+4. Jendela konfirmasi browser akan muncul: *"Apakah Anda yakin ingin menghapus data UMKM ini? Tindakan ini tidak dapat dibatalkan."*
+5. Klik "OK" atau "Ya, Hapus" untuk menyetujui.
+6. Data UMKM akan dihapus secara permanen dari sistem.
+
+(Masukkan gambar/screenshot: Jendela konfirmasi peringatan saat tombol hapus UMKM ditekan)
+
+31
+
+4.2 Mengelola Katalog Produk UMKM
+
+Setelah data toko UMKM terdaftar, kini pengelola dapat memasukkan produk-produk olahan atau kerajinan yang dihasilkan oleh toko tersebut ke dalam etalase katalog.
+
+A. Membuka Menu Kelola Produk
+
+1. Masuk ke Panel Admin.
+2. Klik menu "Kelola Produk" (ikon kotak bertumpuk) pada sidebar navigasi.
+3. Halaman "Daftar Produk UMKM Desa Kamarang" akan terbuka.
+4. Fitur pada halaman daftar produk:
+   • Ringkasan jumlah produk aktif.
+   • Tombol hijau "+ Tambah Produk Baru" di kanan atas.
+   • Tabel data produk yang memuat: Foto Thumbnail, Nama Produk, Toko UMKM Pemilik, Kategori, Harga (Pas atau Rentang Estimasi), Varian yang Tersedia, Status Stok, Status Unggulan (Bintang), dan Tombol Aksi (Edit & Hapus).
+
+(Masukkan gambar/screenshot: Tampilan tabel Kelola Produk di panel admin dengan gambar produk, harga, dan badge kategori)
+
+32
+
+B. Menambah Produk Baru
+
+Langkah-langkah:
+1. Pada menu Kelola Produk, klik tombol "+ Tambah Produk Baru".
+2. Formulir penambahan produk akan terbuka.
+3. Lengkapi kolom-kolom data produk sebagai berikut:
+
+1. UMKM Pemilik / Penjual (Wajib Diisi):
+   Pilih toko pembuat produk melalui menu tarik-turun (dropdown). Contoh: *UMKM Keripik Ibu Siti (Ibu Siti Rohanah)*.
+2. Kategori Produk (Wajib Diisi):
+   Pilih kelompok produk yang cocok (contoh: *Makanan Ringan* atau *Olahan Pangan*).
+3. Nama Produk (Wajib Diisi):
+   Tuliskan nama produk olahan secara menarik dan jelas (contoh: *Keripik Singkong Renyah Rasa Balado*).
+4. Harga Dasar / Minimum (Wajib Diisi):
+   Ketikkan nominal harga terendah dalam bentuk angka tanpa titik atau tanda koma (contoh jika harga Rp 15.000, ketik: `15000`).
+5. Harga Maksimum / Estimasi (Opsional):
+   Ketikkan nominal harga tertinggi jika produk memiliki rentang harga (contoh: `25000`). Kosongkan kolom ini jika produk hanya memiliki satu harga pas.
+6. Satuan / Kemasan (Wajib Diisi):
+   Masukkan satuan jualan produk (contoh: `pouch 250gr`, `toples 500gr`, `bungkus`, `pcs`, atau `kg`).
+7. Status Ketersediaan (Wajib Diisi):
+   Pilih salah satu dari 3 pilihan:
+   • *Tersedia (Ready Stock)*: Produk langsung siap dipesan/dibeli.
+   • *Pre-Order (PO)*: Produk baru dibuat setelah dipesan.
+   • *Stok Habis*: Produk sedang kosong sementara waktu.
+8. Opsi Varian Produk (Opsional tapi Sangat Berguna):
+   Menambahkan pilihan variasi rasa, kemasan, atau aroma yang dapat dipilih pembeli (dijelaskan rinci pada poin D).
+9. Nomor Izin P-IRT / Sertifikasi Halal (Opsional):
+   Masukkan nomor legalitas jika sudah ada (contoh: *P-IRT: 2153209010123-26*). Ini meningkatkan kepercayaan pembeli luar daerah.
+10. Foto Produk Utama (Wajib Diisi):
+    Pilih foto produk terbaik dari komputer/HP (format JPG, PNG, atau WEBP, ukuran file maksimal 3 MB). Pastikan foto terang dan jelas.
+11. Deskripsi Singkat (Opsional):
+    Ringkasan 1-2 kalimat pemikat yang muncul di kartu katalog.
+12. Deskripsi Lengkap (Opsional):
+    Penjelasan detail mengenai komposisi bahan alami, kebersihan produksi, cara penyimpanan, dan saran konsumsi.
+13. Sakelar Jadikan Produk Unggulan (Featured):
+    Geser sakelar menjadi hijau aktif jika ingin produk ini muncul di halaman depan beranda desa dengan lencana bintang khusus.
+
+4. Klik tombol hijau "Simpan Produk". Produk seketika terbit di halaman publik!
+
+(Masukkan gambar/screenshot: Formulir tambah produk baru lengkap dengan pilihan UMKM, kategori, dan isian harga)
+
+33
+
++------------------------+-------------------------------------------------------------+--------------+
+| Nama Kolom             | Contoh Pengisian                                            | Status Wajib |
++------------------------+-------------------------------------------------------------+--------------+
+| UMKM Pemilik           | Pilih: UMKM Keripik Ibu Siti                                | WAJIB        |
+| Kategori Produk        | Pilih: Makanan Ringan                                       | WAJIB        |
+| Nama Produk            | Keripik Pisang Madu Gurih                                   | WAJIB        |
+| Harga Dasar (Min)      | 12000                                                       | WAJIB        |
+| Harga Maksimum (Max)   | 25000 (atau kosongkan jika pas)                             | OPSIONAL     |
+| Satuan Kemasan         | pouch 250gr                                                 | WAJIB        |
+| Status Stok            | Tersedia (Ready Stock)                                      | WAJIB        |
+| Varian Produk          | Original, Manis, Coklat, Keju                               | OPSIONAL     |
+| Nomor Izin P-IRT       | P-IRT No. 2153209010456-26                                  | OPSIONAL     |
+| Foto Produk            | kripik_pisang.jpg (Maksimal 3 MB)                           | WAJIB        |
+| Deskripsi Lengkap      | Terbuat dari pisang kapas pilihan khas Desa Kamarang...     | OPSIONAL     |
+| Produk Unggulan        | Geser Aktif (ON)                                            | OPSIONAL     |
++------------------------+-------------------------------------------------------------+--------------+
+
+34
+
+C. Mengatur Harga Pas vs Rentang Estimasi Harga (Min - Max)
+
+Produk olahan desa sering kali memiliki harga yang bervariasi tergantung ukuran toples, kemasan plastik, atau ukuran berat gramasi. Sistem ini memberikan kemudahan luar biasa dengan fitur "Rentang Estimasi Harga".
+
+Kapan Menggunakan Harga Pas?
+Gunakan skenario ini jika produk hanya dijual dalam 1 ukuran kemasan dan harganya sudah pasti.
+• Kolom "Harga Dasar / Minimum": Ketik harganya, misal `15000`.
+• Kolom "Harga Maksimum": KOSONGKAN saja.
+• Tampilan di Website: Akan tertulis harga tunggal yang rapi: **Rp 15.000**.
+
+Kapan Menggunakan Rentang Estimasi Harga?
+Gunakan skenario ini jika produk dijual dalam beberapa ukuran (misal ada ukuran kecil Rp 10.000 dan ukuran jumbo Rp 30.000).
+• Kolom "Harga Dasar / Minimum": Ketik batas harga terendah, misal `10000`.
+• Kolom "Harga Maksimum": Ketik batas harga tertinggi, misal `30000`.
+• Tampilan di Website: Sistem secara otomatis memformatnya menjadi: **Rp 10.000 - Rp 30.000**.
+• Keuntungan: Pembeli langsung mengetahui kisaran harga tanpa merasa bingung, dan dapat mendiskusikan ukuran yang diinginkan lewat WhatsApp.
+
+(Masukkan gambar/screenshot: Perbandingan tampilan harga tunggal pas vs rentang estimasi harga di kartu produk katalog)
+
+35
+
+D. Menambahkan Opsi Varian Produk Dinamis
+
+Sistem menyediakan fitur input varian interaktif berbasis chip/tag. Pembeli di website nanti dapat mengklik varian rasa yang disukai, dan varian tersebut otomatis tercatat pada pesan WhatsApp pemesanan!
+
+Cara Menambahkan Varian Produk di Panel Admin:
+1. Pada formulir tambah/edit produk, temukan kotak abu-abu bertuliskan "Opsi Varian Produk (Rasa, Ukuran, Kemasan)".
+2. Terdapat 2 (dua) cara mudah memasukkan varian:
+   • Cara Cepat (Tombol Saran): Klik tombol pintas yang sudah disediakan, seperti `+ Original`, `+ Pedas Manis`, `+ Balado`, `+ Keju`, `+ 250gr`, `+ 500gr`, atau `+ 1kg`. Varian tersebut akan seketika masuk ke kotak daftar.
+   • Cara Ketik Bebas: Ketikkan nama varian yang Anda inginkan di kolom isian (misal: *Rasa Jagung Bakar* atau *Kemasan Toples Kaca*), kemudian tekan tombol hijau "Tambah" atau tekan Enter pada keyboard.
+3. Varian yang telah ditambahkan akan tampil sebagai lencana hijau kecil (badge).
+4. Jika ingin menghapus salah satu varian yang salah ketik, cukup klik tanda silang kecil (x) pada lencana varian tersebut.
+5. Jika produk tidak memiliki pilihan varian (hanya 1 jenis), biarkan kotak ini kosong tanpa menambahkan apa pun.
+
+(Masukkan gambar/screenshot: Kotak fitur Opsi Varian Produk di panel admin dengan lencana chip varian yang ditambahkan)
+
+36
+
+E. Mengatur Status Stok & Produk Unggulan (Featured)
+
+Mengatur Status Ketersediaan Stok:
+Pengelola dapat mengubah status produk sewaktu-waktu sesuai ketersediaan bahan baku di desa:
+• Tersedia: Menampilkan label hijau segar "Ready Stock". Calon pembeli dapat langsung memesan.
+• Pre-Order: Menampilkan label biru "Pre-Order". Menginformasikan pembeli bahwa produk akan dimasak/dibuat terlebih dahulu (misal tumpeng olahan atau kue basah).
+• Stok Habis: Menampilkan label abu-abu "Stok Habis". Tombol pemesanan WhatsApp otomatis dimatikan sementara agar pemilik toko tidak menerima pesanan barang kosong.
+
+Mengatur Produk Unggulan Desa (Featured Products):
+Pemerintah desa dapat memilih 4 hingga 8 produk terbaik dari berbagai UMKM untuk dipajang di etalase Halaman Depan Beranda.
+• Di formulir produk: Cukup aktifkan tombol sakelar "Jadikan Produk Unggulan Desa?".
+• Melalui tabel daftar produk: Klik ikon bintang pada baris produk. Bintang berwarna kuning emas menandakan produk tersebut aktif sebagai produk unggulan beranda.
+
+(Masukkan gambar/screenshot: Sakelar aktivasi produk unggulan dan tampilan bintang emas pada tabel produk)
+
+37
+
+F. Mengubah (Edit) dan Menghapus Produk
+
+Mengubah Data Produk:
+1. Masuk ke menu "Kelola Produk".
+2. Temukan produk yang ingin diedit, lalu klik tombol "Edit" (ikon pensil).
+3. Ubah informasi yang diperlukan (contoh: harga naik, menambah varian rasa baru, mengubah status stok menjadi Tersedia, atau mengganti foto kemasan baru).
+4. Klik "Simpan Perubahan". Data produk di katalog seketika terbarui.
+
+Menghapus Produk:
+1. Masuk ke menu "Kelola Produk".
+2. Klik tombol "Hapus" (ikon tempat sampah merah) pada baris produk yang ingin diarsipkan/dihapus.
+3. Klik "OK" pada kotak konfirmasi. Produk akan terhapus dari sistem katalog.
+
+(Masukkan gambar/screenshot: Tombol edit dan hapus pada baris tabel daftar produk)
+
+38
+
+BAB V
+PENGELOLAAN FITUR PENDUKUNG (TAMPILAN WEB)
+
+5.1 Mengelola Kategori Produk
+
+Fitur "Kategori Produk" berfungsi untuk mengelompokkan aneka olahan UMKM Desa Kamarang agar calon pembeli dapat menyaring barang belanjaan sesuai minatnya secara cepat (misalnya hanya ingin melihat aneka camilan atau minuman).
+
+A. Menambah Kategori Baru
+
+Langkah-langkah:
+1. Masuk ke Panel Admin.
+2. Klik menu "Kategori Produk" (ikon label/tags) pada sidebar navigasi.
+3. Pada sisi sebelah kiri layar, Anda akan melihat formulir "Tambah Kategori Baru".
+4. Isi kolom data berikut:
+   • Nama Kategori (Wajib): Tuliskan nama kelompok (contoh: *Kerajinan Tangan & Anyaman* atau *Bumbu & Rempah Tradisional*).
+   • Ikon Kategori (Opsional): Tuliskan kata kunci ikon FontAwesome atau nama benda pemikat (contoh: `cookie`, `bowl-rice`, `glass-water`, `pepper-hot`, `shirt`, `basket-shopping`).
+   • Deskripsi Singkat (Opsional): Berikan penjelasan ringkas tentang isi kelompok produk tersebut (contoh: *Aneka kerajinan anyaman bambu dan tas buatan ibu-ibu PKK Desa Kamarang*).
+5. Klik tombol hijau "Tambah Kategori".
+6. Kategori baru akan langsung muncul pada daftar kategori aktif di sebelah kanan layar dan otomatis menjadi pilihan di formulir tambah produk.
+
+(Masukkan gambar/screenshot: Formulir Tambah Kategori Baru di sebelah kiri dan tabel daftar kategori aktif di sebelah kanan)
+
+39
+
+B. Mengubah dan Menghapus Kategori
+
+Mengubah (Edit) Kategori:
+1. Pada halaman Kategori Produk, lihat daftar kategori aktif di kolom sebelah kanan.
+2. Klik tombol edit (ikon pensil) pada baris kategori yang ingin diubah namanya atau deskripsinya.
+3. Formulir di sebelah kiri akan otomatis beralih ke mode "Edit Kategori" dan terisi data lama kategori tersebut.
+4. Perbarui nama atau deskripsi yang diinginkan.
+5. Klik tombol "Simpan Perubahan". Jika batal mengedit, klik tombol "Batal".
+
+Menghapus Kategori:
+1. Temukan kategori yang ingin dihapus pada tabel sebelah kanan.
+2. Klik tombol hapus (ikon tempat sampah).
+3. Konfirmasi penghapusan dengan menekan "OK".
+
+Catatan Penting:
+Jangan menghapus kategori yang saat ini masih memiliki produk terdaftar di dalamnya. Pindahkan terlebih dahulu produk-produk tersebut ke kategori lain sebelum menghapus kategori lama.
+
+(Masukkan gambar/screenshot: Mode edit kategori produk saat tombol pensil ditekan)
+
+40
+
+5.2 Mengelola Banner Slider Beranda
+
+Banner Slider adalah gambar spanduk promosi berjalan di bagian paling atas halaman depan (Beranda). Fitur ini sangat efektif untuk mengumumkan produk musiman (seperti parsel lebaran, promo panen raya emping melinjo, atau aneka olahan UMKM desa).
+
+A. Menambah Banner Slider Baru
+
+Langkah-langkah:
+1. Masuk ke Panel Admin, klik menu "Banner Slider" (ikon galeri gambar di kelompok Tampilan Web).
+2. Di sebelah kiri, terdapat formulir "Tambah Banner Slider Baru".
+3. Isi kolom formulir:
+   • Judul Banner (Wajib): Judul spanduk yang besar dan menarik (contoh: *Katalog Produk & Olahan Khas Desa Kamarang*).
+   • Sub Judul / Keterangan (Opsional): Kalimat penjelas di bawah judul (contoh: *Dukung Usaha Warga Lokal Menuju Kemandirian Ekonomi Desa*).
+   • Gambar Banner (Wajib): Unggah gambar dengan rasio melebar (Rasio 16:9, resolusi rekomendasi 1920x1080 atau 1280x720 piksel, ukuran file maksimal 4 MB). Pastikan gambar tidak pecah atau buram.
+   • Teks Tombol (Opsional): Tulisan pada tombol ajakan (contoh: *Lihat Produk Unggulan* atau *Jelajahi Katalog*).
+   • Link Tujuan (Opsional): Alamat halaman saat tombol diklik (contoh: `/katalog` atau `/umkm`).
+   • Kotak Centang Aktifkan Banner: Centang agar banner langsung tampil di halaman depan.
+4. Klik tombol hijau "Simpan Banner".
+
+(Masukkan gambar/screenshot: Formulir Tambah Banner Slider Baru lengkap dengan input judul dan tombol unggah berkas gambar)
+
+41
+
+B. Mengatur Urutan, Tautan, dan Status Aktif Banner
+
+Pada area sebelah kanan halaman Banner Slider, pengelola dapat melihat daftar spanduk yang sedang aktif lengkap dengan pratinjau gambarnya.
+
+Pengaturan yang dapat dilakukan:
+• Menguji Tautan: Pastikan teks link seperti `/katalog` berfungsi dengan baik saat banner diklik pengunjung.
+• Menonaktifkan Sementara: Jika spanduk promo musiman sudah lewat, Anda dapat mengubah statusnya menjadi tidak aktif tanpa harus menghapus gambarnya.
+• Multi-Slider: Jika Anda mengunggah lebih dari satu banner aktif, spanduk di halaman beranda akan otomatis berganti slide secara mulus (carousel animasi) setiap beberapa detik.
+
+(Masukkan gambar/screenshot: Daftar banner slider aktif yang menampilkan pratinjau gambar 16:9)
+
+42
+
+C. Menghapus Banner Slider
+
+Jika spanduk sudah tidak relevan lagi atau ingin diganti dengan desain yang benar-benar baru:
+1. Temukan banner yang ingin dihapus pada daftar sebelah kanan.
+2. Klik tombol merah "Hapus" pada kartu banner tersebut.
+3. Konfirmasi dengan menekan "OK". Berkas banner akan dihapus dari server.
+
+5.3 Membaca Modul Panduan Mandiri di Sistem
+
+Selain buku panduan dalam bentuk dokumen cetak / teks ini, pengelola desa juga dapat membaca rangkuman langkah kerja cepat langsung di dalam layar sistem tanpa perlu membuka berkas lain.
+
+Cara Membuka:
+1. Masuk ke Panel Admin.
+2. Klik menu "Panduan Pengelolaan" (ikon buku terbuka berwarna kuning emas) pada sidebar kiri.
+3. Layar akan menampilkan kartu modul pelatihan interaktif yang memuat langkah-langkah praktis:
+   • Cara mendaftarkan pelaku UMKM baru.
+   • Cara menambahkan produk, varian, dan rentang harga.
+   • Memahami alur pemesanan calon pembeli (WhatsApp vs Belanja Langsung).
+   • Menjaga keamanan akun admin dan password login.
+   • Memperbarui banner slider beranda.
+
+(Masukkan gambar/screenshot: Tampilan modul panduan interaktif pada menu Panduan Pengelolaan di panel admin)
+
+43
+
+BAB VI
+PANDUAN SISI PUBLIK & PEMESANAN WHATSAPP
+
+6.1 Menjelajahi Halaman Publik (Tampilan Pengunjung)
+
+Bab ini memandu bagaimana masyarakat umum, warga desa, dan calon pembeli dari luar daerah berinteraksi dengan website Katalog UMKM Desa Kamarang.
+
+A. Halaman Beranda (/)
+
+Pengalaman Pengunjung di Beranda:
+1. Pengunjung disambut oleh Spanduk Visual (Banner Hero) yang menginformasikan potensi unggulan UMKM Kamarang dengan tombol cepat menuju katalog.
+2. Di bawah spanduk, pengunjung dapat melihat Kartu Statistik yang membuktikan keaktifan dan potensi desa (jumlah penduduk, KK, dan UMKM).
+3. Pengunjung dapat menyentuh salah satu Ikon Kategori untuk langsung melihat makanan atau minuman yang diinginkan.
+4. Pada bagian "Produk Pilihan Unggulan", pengunjung dapat melihat foto-foto produk terlaris lengkap dengan label harga dan nama pembuatnya.
+5. Membaca sambutan resmi Kuwu Desa Kamarang dan dapat langsung menekan tombol hijau untuk menjelajahi Direktori UMKM warga.
+
+(Masukkan gambar/screenshot: Tampilan Beranda website memperlihatkan bagian Hero Slider dan Kategori Pilihan)
+
+44
+
+B. Halaman Katalog Produk (/katalog)
+
+Halaman ini merupakan tempat utama belanja dan pencarian produk.
+Cara Pengunjung Mencari Produk:
+1. Menggunakan Kotak Pencarian:
+   Ketik kata kunci nama makanan di kolom "Cari produk olahan...", misalnya mengetik "emping". Hasil pencarian akan langsung menyaring produk terkait secara otomatis.
+2. Menggunakan Tombol Filter Kategori:
+   Klik tab "Makanan Ringan" untuk hanya melihat camilan, atau klik "Olahan Pangan" untuk melihat makanan olahan.
+3. Memilih Dusun Asal:
+   Jika pembeli ingin membeli dari perajin terdekat, pembeli dapat menyaring produk khusus dari Dusun Manis, Dusun Pahing, Dusun Kliwon, atau Dusun Wage.
+4. Mengurutkan Harga:
+   Pengunjung dapat memilih urutan "Harga Terendah ke Tertinggi" untuk mencari oleh-oleh yang ramah di kantong.
+5. Membuka Rincian:
+   Pengunjung cukup mengklik kartu produk untuk masuk ke halaman detail lengkap.
+
+(Masukkan gambar/screenshot: Fitur pencarian, filter dusun, dan filter kategori pada Halaman Katalog)
+
+45
+
+C. Halaman Direktori UMKM (/umkm)
+
+Halaman Direktori UMKM sangat disukai oleh wisatawan atau pembeli partai besar yang ingin bermitra langsung dengan pemilik usaha:
+1. Pengunjung dapat melihat seluruh daftar rumah produksi di Desa Kamarang.
+2. Setiap kartu UMKM memuat foto tempat usaha, nama toko, nama pemilik (misal: *Ibu Siti Rohanah*), asal dusun, dan jumlah produk yang dihasilkan.
+3. Terdapat penanda status:
+   • Toko dengan WhatsApp: Ditandai lencana hijau "Tersedia WhatsApp".
+   • Toko tanpa WhatsApp: Ditandai lencana biru "Pemesanan di Tempat (Lokasi Toko Fisik)".
+4. Klik tombol "Lihat Profil & Toko" untuk melihat peta rute Google Maps dan seluruh produk yang dijual oleh toko tersebut.
+
+(Masukkan gambar/screenshot: Halaman Direktori UMKM yang menampilkan kartu-kartu toko usaha warga desa)
+
+46
+
+D. Halaman Kontak & Layanan (/kontak)
+
+Bagi warga yang ingin memberikan kritik saran, atau bagi pihak luar yang ingin menjalin kerja sama kemitraan:
+1. Mengakses nomor telepon dan email resmi kantor desa.
+2. Mengisi formulir kontak:
+   • Nama Lengkap
+   • Nomor Telepon / WhatsApp
+   • Subjek Pesan
+   • Isi Pesan Pertanyaan / Saran
+3. Klik tombol hijau "Kirim Pesan Sekarang".
+4. Notifikasi sukses akan muncul di layar.
+
+(Masukkan gambar/screenshot: Formulir kontak publik dan informasi alamat kantor balai desa)
+
+47
+
+6.2 Alur Transaksi & Pemesanan Produk
+
+Sistem ini menerapkan konsep "Direct Social Commerce", yaitu transaksi langsung antara penjual dan pembeli tanpa perantara sistem pembayaran rumit, memanfaatkan aplikasi WhatsApp yang telah dikuasai oleh seluruh lapisan masyarakat.
+
+Sistem membagi alur transaksi menjadi 2 (dua) skenario cerdas:
+
+A. Skenario 1: UMKM Memiliki WhatsApp (1-Click Order)
+
+Alur ini berlaku untuk toko UMKM yang telah mencantumkan nomor WhatsApp aktif di sistem.
+
+Langkah Demi Langkah Pemesanan:
+
+Langkah 1: Pembeli Membuka Detail Produk
+Calon pembeli membuka salah satu produk di katalog (contoh: *Keripik Singkong Renyah Balado*).
+
+Langkah 2: Memilih Varian Rasa atau Ukuran
+Pada kotak "Pilihan Varian Produk", pembeli mengklik salah satu varian yang diinginkan (contoh mengklik: *Pedas Manis*). Varian yang dipilih akan ditandai dengan bingkai hijau tebal.
+
+Langkah 3: Klik Tombol "Pesan via WhatsApp"
+Pembeli menekan tombol hijau besar bertuliskan **"Pesan via WhatsApp"** (ikon logo WhatsApp).
+
+Langkah 4: Terhubung Langsung ke Aplikasi WhatsApp
+• Jika pembeli menggunakan HP: Aplikasi WhatsApp di HP pembeli akan otomatis terbuka seketika dan langsung mengarah ke nomor telepon pemilik UMKM bersangkutan.
+• Jika pembeli menggunakan Komputer/Laptop: Browser akan membuka WhatsApp Web.
+
+48
+
+Langkah 5: Pesan Pemesanan Terisi Otomatis (Auto-Draft Message)
+Pembeli tidak perlu repot mengetik kalimat pembuka dari awal. Sistem telah menyiapkan draft pesan resmi yang sangat rapi di kolom obrolan WhatsApp:
+
+Format Pesan Otomatis Sistem:
+----------------------------------------------------------------------
+"Halo *UMKM Keripik Ibu Siti*, saya tertarik dan ingin memesan produk berikut:
+
+*Produk:* Keripik Singkong Renyah Balado
+*Varian:* Pedas Manis
+*Harga:* Rp 15.000 / pouch 250gr
+
+Apakah stok produk ini masih tersedia? Dan bagaimana petunjuk cara pengiriman atau pengambilannya? Terima kasih."
+----------------------------------------------------------------------
+
+Langkah 6: Kirim dan Sepakati Transaksi
+Pembeli cukup menekan tombol panah kirim di WhatsApp. Pemilik UMKM akan membalas pesan tersebut, menyepakati jumlah pesanan, ongkos kirim (atau janji temu), dan metode pembayaran transfer / tunai (COD).
+
+(Masukkan gambar/screenshot: Tampilan aplikasi WhatsApp dengan pesan draf pesanan otomatis yang terisi nama produk, varian, dan harga)
+
+49
+
+B. Skenario 2: UMKM Tanpa WhatsApp (Pemesanan Langsung di Tempat)
+
+Alur ini dirancang khusus untuk memuliakan dan mengakomodasi para perajin/pembuat makanan khas di desa yang sudah sepuh atau belum memiliki ponsel WhatsApp, sehingga mereka tetap merasakan manfaat nyata dari pembuatan website desa ini.
+
+Langkah Demi Langkah Pembelian Langsung:
+
+Langkah 1: Membuka Detail Produk / Toko
+Calon pembeli membuka detail produk milik UMKM yang tidak memiliki WhatsApp.
+
+Langkah 2: Membaca Kotak "Pemesanan Langsung di Tempat"
+Pada halaman detail produk, sistem secara otomatis tidak menampilkan tombol WhatsApp, melainkan menampilkan kotak petunjuk khusus berwarna biru/kuning keemasan yang informatif:
+
+Informasi yang tertera di kotak petunjuk:
+• *Pemberitahuan*: "Pelaku UMKM ini melayani pemesanan langsung di tempat / toko fisik."
+• *Nama Penanggung Jawab*: Menampilkan nama pemilik usaha (contoh: *Ibu Siti Rohanah*).
+• *Alamat Lengkap*: Menampilkan lokasi rumah/tempat produksi (contoh: *RT 02 / RW 01, Dusun Manis, Desa Kamarang*).
+• *Petunjuk Dusun*: Panduan ancar-ancar dusun di Desa Kamarang.
+
+50
+
+Langkah 3: Menekan Tombol "Petunjuk Arah Google Maps"
+Tepat di bawah alamat toko, terdapat tombol biru bertuliskan **"Buka Rute di Google Maps"**. Pembeli cukup menekan tombol tersebut.
+
+Langkah 4: Navigasi Peta Terbuka
+Aplikasi Google Maps di ponsel pembeli akan otomatis terbuka dan menampilkan rute navigasi jalan belok demi belok dari posisi pembeli berada langsung menuju depan pintu rumah/toko warga di Desa Kamarang.
+
+Langkah 5: Transaksi Langsung Saling Bertatap Muka
+Pembeli datang langsung ke lokasi, mencicipi olahan khas desa, membayar secara tunai, dan membawa pulang oleh-oleh segar langsung dari tangan pembuatnya. Hal ini sekaligus menggerakkan perputaran ekonomi dan pariwisata pedesaan secara nyata.
+
+(Masukkan gambar/screenshot: Kotak petunjuk Pemesanan Langsung di Tempat lengkap dengan tombol navigasi rute Google Maps)
+
+51
+
+BAB VII
+PENANGANAN MASALAH (TROUBLESHOOTING)
+
+Dalam pengoperasian sistem informasi sehari-hari, pengelola desa atau pengguna mungkin menemui beberapa kendala teknis ringan. Bab ini merangkum gejala yang paling sering terjadi beserta panduan solusi praktisnya.
+
+7.1 Kendala Akses & Jaringan
+
+A. Website Tidak Dapat Dibuka Sama Sekali
+Gejala:
+Saat mengetikkan alamat website di browser, layar menampilkan pesan *"This site can’t be reached"* (Situs tidak dapat dijangkau) atau *"ERR_CONNECTION_REFUSED"*.
+
+Kemungkinan Penyebab:
+1. Komputer yang bertindak sebagai server lokal di kantor balai desa dalam keadaan mati atau sleep.
+2. Modul Apache dan MySQL pada aplikasi XAMPP/Laragon belum dinyalakan.
+3. Kabel LAN atau jaringan Wi-Fi kantor desa terputus.
+
+Solusi:
+1. Pastikan laptop/komputer server menyala.
+2. Buka aplikasi **XAMPP Control Panel**, pastikan tombol "Start" pada modul Apache dan MySQL sudah diklik dan indikatornya menyala hijau.
+3. Jika menggunakan terminal, pastikan perintah `php artisan serve` sedang berjalan aktif dan jangan menutup jendela terminal tersebut.
+4. Periksa koneksi Wi-Fi pada perangkat Anda, pastikan terhubung pada jaringan yang sama dengan server.
+
+B. Muncul Pesan 419 | Page Expired Saat Mengirim Formulir
+Gejala:
+Saat administrator menekan tombol "Simpan Produk", "Simpan UMKM", atau saat login, tiba-tiba muncul halaman putih dengan tulisan besar *"419 | Page Expired"*.
+
+Penyebab:
+Halaman formulir didiamkan terbuka terlalu lama di layar tanpa ada aktivitas klik, sehingga token keamanan CSRF (keamanan anti-pemalsuan formulir) telah kedaluwarsa demi melindungi sistem.
+
+Solusi:
+1. Klik tombol "Back" (Kembali) pada browser Anda, atau tekan tombol `F5` untuk memuat ulang halaman.
+2. Masukkan kembali data formulir, lalu klik Simpan.
+3. Untuk menghindari kendala ini, biasakan tidak mendiamkan formulir terbuka kosong lebih dari 2 jam.
+
+52
+
+C. Muncul Pesan 404 | Not Found
+Gejala:
+Layar menampilkan pesan *"404 | Not Found"* (Halaman Tidak Ditemukan).
+
+Penyebab:
+Terjadi salah ketik huruf pada alamat URL, atau produk/toko yang dicari telah dihapus dari basis data.
+
+Solusi:
+1. Periksa ejaan alamat URL pada address bar browser. Pastikan tidak ada spasi atau tanda baca yang salah.
+2. Jika ingin membuka admin, pastikan alamat berakhiran `/admin` atau `/admin/login`.
+3. Klik tombol logo desa di sudut kiri atas untuk kembali ke halaman Beranda utama.
+
+7.2 Kendala Pengelolaan Data & Foto
+
+A. Foto Produk atau Banner Gagal Diunggah
+Gejala:
+Saat menyimpan produk, muncul pesan kesalahan berwarna merah: *"Ukuran file terlalu besar"* atau formulir gagal tersimpan.
+
+Penyebab:
+1. Ukuran berkas (file size) foto produk melebihi batas maksimal 3 Megabyte (3 MB) atau banner melebihi 4 MB. Foto yang langsung diambil dari kamera HP resolusi tinggi sering kali berukuran 5 MB hingga 10 MB.
+2. Format berkas bukan format gambar standar.
+
+Solusi:
+1. Pastikan format foto adalah **JPG**, **JPEG**, **PNG**, atau **WEBP**. Format dokumen seperti PDF atau Word tidak diperbolehkan.
+2. Kompres / kecilkan ukuran foto terlebih dahulu sebelum diunggah:
+   • Cara Sangat Mudah: Kirim foto produk tersebut ke nomor WhatsApp Anda sendiri, lalu unduh kembali foto dari WhatsApp. WhatsApp secara otomatis mengompres ukuran foto menjadi sekitar 200 KB dengan kualitas gambar yang tetap tajam dan bagus.
+   • Atau gunakan situs pengecil gambar gratis seperti `www.tinypng.com` melalui browser HP/laptop.
+3. Unggah kembali foto yang ukurannya sudah di bawah 2 MB.
+
+(Masukkan gambar: Tangkapan layar panduan kompresi foto menggunakan WhatsApp atau situs TinyPNG)
+
+53
+
+B. Perubahan Data atau Produk Baru Tidak Muncul di Publik
+Gejala:
+Admin sudah mengedit harga produk menjadi Rp 20.000, namun saat dicek di HP warga harganya masih tertulis Rp 15.000.
+
+Penyebab:
+Peramban web di HP warga masih menyimpan salinan halaman lama (cache browser).
+
+Solusi:
+1. Di komputer: Tekan kombinasi tombol `Ctrl + F5` untuk membersihkan cache.
+2. Di HP: Usap layar dari atas ke bawah untuk menyegarkan halaman (swipe to refresh), atau buka tab baru dalam mode Samaran (Incognito).
+3. Pastikan di Panel Admin status produk dalam keadaan "Tersedia" atau "Pre-Order", bukan tidak sengaja terhapus.
+
+C. Peta Google Maps Tidak Menampilkan Titik yang Tepat
+Gejala:
+Pin penunjuk arah di peta meloncat ke laut atau ke luar negeri.
+
+Penyebab:
+Tertukar saat mengisi angka Latitude (garis lintang) dan Longitude (garis bujur), atau lupa menyertakan tanda minus (-) pada angka latitude.
+
+Solusi:
+1. Ingat bahwa wilayah Indonesia berada di belahan bumi selatan Khatulistiwa untuk Pulau Jawa, sehingga nilai **Latitude Desa Kamarang selalu diawali tanda minus (-)**, yaitu sekitar `-6.84xxxx`.
+2. Nilai **Longitude selalu bernilai positif**, yaitu sekitar `108.54xxxx`.
+3. Cara paling aman: Gunakan tombol "Lokasi GPS Saya" atau cukup geser pin merah pada kotak peta interaktif, maka angka koordinat akan terisi otomatis secara sempurna tanpa risiko tertukar.
+
+54
+
+7.3 Kendala Pemesanan WhatsApp
+
+A. Tombol WhatsApp Tidak Merespons atau Nomor Salah
+Gejala:
+Saat calon pembeli menekan tombol "Pesan via WhatsApp", muncul pesan error dari WhatsApp: *"Nomor telepon ini tidak terdaftar di WhatsApp"* atau halaman obrolan tidak terbuka.
+
+Penyebab:
+1. Kesalahan pengetikan nomor HP di formulir data UMKM oleh administrator (misalnya nomor kurang satu digit).
+2. Penulisan nomor menyertakan karakter spasi, tanda strip (-), atau tanda plus (+) yang tidak beraturan.
+
+Solusi:
+1. Masuk ke Panel Admin -> buka menu "Data UMKM" -> klik Edit pada UMKM bersangkutan.
+2. Periksa kolom "Nomor WhatsApp".
+3. Tuliskan nomor menggunakan format standar Indonesia, diawali angka 08 (contoh: `082119876543`) atau format internasional `6282119876543`. Sistem telah diprogram secara cerdas untuk otomatis mengonversi angka `08` menjadi kode negara `62`.
+4. Pastikan tidak ada spasi di awal atau di akhir angka.
+5. Klik "Simpan Perubahan" dan uji coba kembali tombol WhatsApp dari halaman publik.
+
+B. Nomor HP Warga / UMKM Tidak Menggunakan Format Standar
+Panduan Penulisan Nomor yang Benar:
+• Benar: `081234567890`
+• Benar: `6281234567890`
+• Salah / Hindari: `0812-3456-7890` (menggunakan tanda minus)
+• Salah / Hindari: `0812 3456 7890` (menggunakan spasi di tengah)
+• Salah / Hindari: `+62 812-3456` (menggunakan karakter acak)
+
+55
+
+7.4 Tips Perawatan & Pemeliharaan Rutin
+
+Agar sistem informasi katalog desa dapat beroperasi dengan stabil, cepat, dan aman dalam jangka panjang bertahun-tahun ke depan, pengelola disarankan menjalankan perawatan rutin berikut:
+
+1. Backup Basis Data (Database) Secara Berkala:
+   Lakukan pencadangan data minimal sebulan sekali. Buka `phpMyAdmin` (http://localhost/phpmyadmin), pilih database `katalog_umkm`, lalu klik tab **Export** dan simpan berkas `.sql` di flashdisk cadangan atau Google Drive desa. Ini melindungi data dari risiko kerusakan laptop kantor.
+2. Bersihkan Arsip Foto yang Tidak Terpakai:
+   Hapus produk-produk lama yang sudah tidak diproduksi lagi oleh warga agar kapasitas penyimpanan server tidak penuh.
+3. Penggantian Kata Sandi Berkala:
+   Lakukan pergantian kata sandi akun admin setiap 3 hingga 6 bulan sekali demi mencegah kebocoran data.
+
+(Masukkan gambar: Infografis langkah mudah mengekspor database di phpMyAdmin untuk cadangan arsip desa)
+
+56
+
+BAB VIII
+PENUTUP
+
+8.1 Kesimpulan & Harapan Keberlanjutan
+
+Pengembangan Sistem Informasi Katalog dan Pemasaran Digital Produk UMKM Desa Kamarang merupakan salah satu wujud nyata dari implementasi keilmuan dan teknologi informasi dalam rangka pengabdian kepada masyarakat melalui program Kuliah Kerja Mahasiswa (KKM) Kelompok 26 Universitas Muhammadiyah Cirebon Tahun 2026.
+
+Kehadiran platform katalog digital ini diharapkan dapat menjembatani potensi besar produk olahan dan kerajinan tangan warga desa dengan pasar konsumen yang lebih luas, baik di tingkat regional Cirebon maupun nasional. Dengan kemudahan fitur pemesanan instan 1-Click WhatsApp Order dan solusi pemetaan Google Maps bagi UMKM tanpa WhatsApp, digitalisasi di Desa Kamarang menjadi gerakan inklusif yang merangkul seluruh kalangan masyarakat tanpa ada warga yang tertinggal.
+
+Selesainya masa bakti program KKM bukanlah akhir dari sistem ini, melainkan awal dari era baru kemandirian ekonomi digital Desa Kamarang. Kami menaruh harapan besar kepada Pemerintah Desa Kamarang, pengurus BUMDes, Karang Taruna, dan para pelaku UMKM untuk terus merawat, memperbarui, dan mempublikasikan katalog ini secara berkesinambungan. Dengan semangat gotong royong dan pemanfaatan teknologi yang tepat guna, Desa Kamarang diyakini mampu tumbuh menjadi desa yang mandiri, berdaya saing tinggi, dan sejahtera.
+
+(Masukkan gambar: Foto bersama tim KKM Kelompok 26 UMC bersama Kuwu dan Perangkat Desa Kamarang serta perwakilan Pelaku UMKM)
+
+57
+
+8.2 Kontak Dukungan Teknis
+
+Apabila perangkat desa, pengelola website, atau pengurus BUMDes memerlukan panduan teknis lebih lanjut, konsultasi sistem, maupun bantuan pemecahan masalah (troubleshooting) pasca-periode KKM, silakan menghubungi narahubung penanggung jawab teknis berikut:
+
++-----------------------------+-------------------------------------------------------------+
+| Informasi Kontak            | Keterangan Dukungan                                         |
++-----------------------------+-------------------------------------------------------------+
+| Penanggung Jawab Teknis     | Khotibul Umam                                               |
+| Program Kerja               | KKM Kelompok 26 Universitas Muhammadiyah Cirebon 2026       |
+| Asal Perguruan Tinggi       | Universitas Muhammadiyah Cirebon (UMC)                      |
+| Wilayah Pengabdian          | Desa Kamarang, Kec. Greged, Kab. Cirebon, Jawa Barat        |
+| Telepon / WhatsApp          | 0821-1987-6543 / 0895-3370-67978                            |
+| Alamat Email                | desakamarang.greged@gmail.com / khotibulumam@gmail.com      |
+| Alamat Kampus               | Jl. Tuparev No. 70, Kedawung, Cirebon, Jawa Barat 45153     |
++-----------------------------+-------------------------------------------------------------+
+
+Semoga Buku Panduan Penggunaan ini dapat menjadi pedoman yang bermanfaat, mudah dipahami, dan memberikan kontribusi nyata bagi kemajuan perekonomian masyarakat Desa Kamarang.
+
+58
